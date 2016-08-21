@@ -3,7 +3,7 @@ layout: page
 title: About Lanyon
 ---
 
-#What's Jekyll?
+##What's Jekyll?
 
 [Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
 
@@ -13,7 +13,7 @@ It's an immensely useful tool and one we encourage you to use here with Hyde.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
 
-#Introducting Lanyon
+##Introducting Lanyon
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
@@ -47,7 +47,7 @@ Lanyon is by preference a forward-thinking project. In addition to the latest ve
 
 Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.
 
-#Example Content
+##Example Content
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
