@@ -6,8 +6,8 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Robin
-tagline:          'My blog
+title:            'Robin'
+tagline:          'My blog'
 description:      'My first personal blog'
 url:              http://robingg.github.io
 
