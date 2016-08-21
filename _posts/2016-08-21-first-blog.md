@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Step
+title: My First Blog
 ---
 
 #Welcome!
