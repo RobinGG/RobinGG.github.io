@@ -17,7 +17,7 @@ title: Linux Commands
 
 ---
 
-###  --help
+### help
 
 `#[command] --help`
 
