@@ -15,7 +15,9 @@ title: Linux Commands
 
 一切的一切都要从 man 开始说起，通过它可以打印所有指令的帮助文档。
 
-### --help
+---
+
+###  --help
 
 `#[command] --help`
 
