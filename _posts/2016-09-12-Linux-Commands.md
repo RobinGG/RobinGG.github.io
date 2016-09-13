@@ -8,6 +8,7 @@ title: Linux Commands
 记录一些自己工作生活中曾经使用过的 Linux 指令，不定期更新。
 
 ---
+
 ### man
 
 `#man [command]`
@@ -25,6 +26,7 @@ title: Linux Commands
 以上两者也可以打印，但感觉不像 help 更加的通用
 
 ---
+
 ### ln
 
 `#ln -[Ffhinsv] [source_file] [target_file]`
@@ -37,6 +39,7 @@ link 指令，用来创建链接文件，链接文件并非实际存在。
 + 硬链接则是创建了一个指针指向源文件的内存区域
 
 ---
+
 ### ssh
 
 `#ssh user@host`
