@@ -3,8 +3,6 @@ layout: post
 title: Linux Commands
 ---
 
-# Linux Commands
-
 记录一些自己工作生活中曾经使用过的 Linux 指令，不定期更新。
 
 ---
