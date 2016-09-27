@@ -3,8 +3,6 @@ layout: post
 title: Linux Commands
 ---
 
-# Linux Commands
-
 记录一些自己工作生活中曾经使用过的 Linux 指令，不定期更新。
 
 ---
@@ -46,8 +44,18 @@ link 指令，用来创建链接文件，链接文件并非实际存在。
 
 `#ssh user@host`
 
-建立 ssh 通道的指令，最简单与常用的莫过于登录服务器了。但是 ssh 还有其他的用法。比如建立 tunnel:
+建立 ssh 通道的指令，最简单与常用的莫过于登录服务器了。
+
+ssh 还有其他的用法。比如建立 tunnel:
 
 `#ssh -L [bind_address:]port:host:hostport`
 
 通过上面的 ssh 指令可以将所有访问 port 端口的请求转发到 host 的 hostport 端口。通过 ssh 建立 tunnel 后可以经由跳板机访问公司内网。
+
+---
+
+### grep
+
+`#grep [pattern] [file]`
+
+是不是在 man 指令查看了 help 文档以后头昏眼花？在文档里面找一条记录找到放弃？试试 grep 吧！
