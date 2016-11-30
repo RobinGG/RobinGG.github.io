@@ -3,16 +3,12 @@ layout: page
 title: Friends
 ---
 
-Here is some of my friends' blog：
+Here are some of my friends' blogs：
 
-Frank Lao
-<br/>
-Classmates in SCUT, now studing in CMU.
+Frank Lao - Classmate in SCUT, now studing in CMU.
 <br/>
 [WindSing](https://windsing.me/)
 
-Eric Cen
-<br/>
-Mentor in Ericsson.
+Eric Cen - Mentor in Ericsson.
 <br/>
 [Eric's Neverland](http://ericcenblog.com/)
