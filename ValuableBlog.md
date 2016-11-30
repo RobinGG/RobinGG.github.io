@@ -3,7 +3,7 @@ layout: page
 title: Valuable Blog
 ---
 
-# Friends
+### Friends
 ---
 
 Here are some of my friends' blogs：
@@ -16,7 +16,7 @@ Here are some of my friends' blogs：
 <br/>
 [Eric's Neverland](http://ericcenblog.com/)
 
-# Famous
+### Famous
 ---
 
 **阮一峰**
