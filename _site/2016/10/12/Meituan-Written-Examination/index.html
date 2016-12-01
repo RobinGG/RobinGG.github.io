@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      2017美团java工程师笔试编程题 &middot; Robin
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-146052-15', 'getpoole.com');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>My first personal blog</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+
+      <a class="sidebar-nav-item" href="/valuableBlog">Valuable Blog</a>
+      <a class="sidebar-nav-item" href="/aboutLanyon">About Lanyon</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Robin</a>
+            <small>Hi, there</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+    <h1 class="post-title">2017美团java工程师笔试编程题</h1>
+    <span class="post-date">12 Oct 2016</span>
+    <p>在“<a href="http://group.jobbole.com/23599/#">伯乐在线</a>”上看到的一个美团笔试题，解答了一下，顺便把思考过程和答案贴回来。</p>
+
+<h3 id="section">题目</h3>
+<hr />
+
+<p>给定 x, k ，求满足 x + y = x | y 的第 k 小的正整数 y 。 | 是二进制的或(or)运算，例如 3 | 5 = 7。 比如当 x=5，k=1时返回 2，因为5+1=6 不等于 5|1=5，而 5+2=7 等于 5 | 2 = 7。</p>
+
+<p>输入描述:
+每组测试用例仅包含一组数据，每组数据为两个正整数 x , k。 满足 0 &lt; x , k ≤ 2,000,000,000。</p>
+
+<p>输出描述:
+输出一个数y。</p>
+
+<p>输入例子:
+5 1</p>
+
+<p>输出例子:
+2</p>
+
+<h3 id="section-1">解答</h3>
+<hr />
+
+<p>我们不妨首先来看看 x + y == x | y 在什么样的条件下成立。</p>
+
+<p>先看 x = 3, y = 5，转为二进制计算：
+0011 + 0101 = 1000
+0011 | 0101 = 0111</p>
+
+<p>其实我们可以发现在对应的某一位上，二进制的加法实际上是在执行“异或”的操作，与“或”操作相比，只有在这一位上都为“1”时，结果不同。
+也就是如果 x,y 符合 x + y == x | y，那 x,y 二进制在同一位上必然只有一个有“1”。问题就可以转化为：怎样将 x 二进制里面的“0”，转化为“1”才能获得第 k 小的数？</p>
+
+<p>当 x = 5, k = 1 时，y 为多少？
+我们在 0101 中插入的“1”要尽量小，不妨刨去 0101 中的“1”，剩下全“0”的情况，因为只有“0”才能让我们有机会插入“1”。而第 k 小的数自然就是 k 本身。所以我们得到 k 的二进制表示：01，插回 0101 中的“0”对应的位置得到：0111。这个数就是第 k 小的 x | y。
+下一步如何得到 y？还记得我们开始的时候就通过观察发现这是一种特殊情况下的“异或”，所以我们可以将 x 与 x | y 再进行一次“异或”操作就可以得到 y：0010</p>
+
+<p>ok，思路已经理清楚了。Talk is cheap， show me the code，让我们撸代码吧！</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+ 
+<span class="cm">/**
+ * Created by Robin on 12/10/2016.
+ */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Meituan</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Scanner</span> <span class="n">scan</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"x: "</span><span class="o">);</span>
+        <span class="kt">long</span> <span class="n">x</span> <span class="o">=</span> <span class="n">scan</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"k: "</span><span class="o">);</span>
+        <span class="kt">long</span> <span class="n">k</span> <span class="o">=</span> <span class="n">scan</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="kt">long</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">31</span> <span class="o">&amp;&amp;</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">((</span><span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">y</span> <span class="o">=</span> <span class="o">((</span><span class="n">k</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">&lt;&lt;</span> <span class="n">i</span><span class="o">)</span> <span class="o">|</span> <span class="n">y</span><span class="o">;</span>
+                <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">31</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">63</span> <span class="o">&amp;&amp;</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="o">((</span><span class="n">k</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">&lt;&lt;</span> <span class="n">i</span><span class="o">)</span> <span class="o">|</span> <span class="n">y</span><span class="o">;</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">^</span> <span class="n">x</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">y</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre>
+</div>
+
+<p>在编写上面的代码的时候发现一个问题：当 y 为 long，而 x,k 为 int 类型的时候，代码会得到错误的结果。</p>
+
+<p>这是因为 Java 在对 int 型向 long 自动转型的时候，高位不是自动补 0，而是根据最高位符号位自动补充。就造成了我代码中的错误。</p>
+
+</div>
+
+<div class="related">
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+        
+        <li>
+            <h3>
+                <a href="/2016/09/27/Certification-Authority/">
+                    Certification Authority
+                    <small>27 Sep 2016</small>
+                </a>
+            </h3>
+        </li>
+        
+        <li>
+            <h3>
+                <a href="/2016/09/12/Linux-Commands/">
+                    Linux Commands
+                    <small>12 Sep 2016</small>
+                </a>
+            </h3>
+        </li>
+        
+        <li>
+            <h3>
+                <a href="/2016/08/21/first-blog/">
+                    My First Blog
+                    <small>21 Aug 2016</small>
+                </a>
+            </h3>
+        </li>
+        
+    </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+</html>
