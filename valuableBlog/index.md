@@ -7,7 +7,7 @@ title: Valuable Blog
 
 Here are some of my friends' blogs：
 
-**Frank Lao** - Classmate in SCUT, now studing in CMU.
+**Frank Lao** - Coding Monkey.
 <br/>
 [WindSing](https://windsing.me/)
 
