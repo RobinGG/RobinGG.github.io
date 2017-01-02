@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index of Nodes
+title: Index of Notes
 ---
 
 
