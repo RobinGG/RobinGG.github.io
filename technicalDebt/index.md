@@ -3,6 +3,12 @@ layout: page
 title: Technical Debt
 ---
 
+### 10 Jan 2017
+
+How to implement call back in Java?
+
+---
+
 ### 27th Dec 2016
 
 No ORM for Cassandra?
