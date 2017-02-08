@@ -2,6 +2,13 @@
 layout: page
 title: Technical Debt
 ---
+
+### 8 Feb 2017
+
+What is middleware?
+
+---
+
 ### 12 Jan 2017
 
 What is LVM?
