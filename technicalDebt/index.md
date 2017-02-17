@@ -3,6 +3,12 @@ layout: page
 title: Technical Debt
 ---
 
+### 17 Feb 2017
+
+Learn regex
+
+---
+
 ### 8 Feb 2017
 
 What is middleware?
