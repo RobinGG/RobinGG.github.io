@@ -3,6 +3,10 @@ layout: page
 title: Technical Debt
 ---
 
+### 22 May 2017
+
+Environment variables in Linux
+
 ### 19 May 2017
 
 Java file operation
