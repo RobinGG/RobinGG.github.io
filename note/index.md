@@ -7,3 +7,6 @@ Wow, you found this!
 
 **Word List:** 
 [word List](./wordList/)
+
+**Practice in Python**
+[Python practice](./pythonPractice/)
