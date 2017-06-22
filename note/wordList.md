@@ -80,3 +80,32 @@ competitor or adversary
 **wander**
 to move casually or leisurely
 漫步
+
+### Jun 7th 2017
+
+**proposul**
+a plan or suggestion, especially a formal or written one, put forward for consideration or discussion by others.
+提案，提议
+
+**diameter**
+a straight line passing from side to side through the center of a body or figure, especially a circle or sphere.
+直径
+
+### Jun 21st 2017
+
+**feasibility**
+the state or degree of being easily or conveniently done.
+可行性
+
+**roadmap**
+a plan or strategy intended to achieve a particular goal.
+路线图，工业上指蓝图
+
+**fulfil**
+bring to completion or reality; achieve or realize (something desired, promised, or predicted).
+carry out (a task, duty, or role) as required, pledged, or expected.
+履行，满足，完成
+
+**agenda**
+a list of items to be discussed at a formal meeting.
+议程
