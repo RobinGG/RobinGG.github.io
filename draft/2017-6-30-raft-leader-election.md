@@ -1,7 +1,4 @@
----
-layout: post
-title: Raft 协议之 Leader 选举
----
+
 
 自己在团队里面负责的是基于 Consul 实现的 CM（Configuration Management）模块。以前一直对于 Consul 怎么实现一致性不是很了解。最近看了一下 Raft 协议，就写一写自己对于 Raft 的理解和一些笔记。
 
