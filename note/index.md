@@ -16,3 +16,6 @@ Wow, you found this!
 
 **Linux**
 [Linux](./linux/)
+
+**Cassandra**
+[Cassandra](./cassandra/)
