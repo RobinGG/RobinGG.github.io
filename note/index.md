@@ -8,14 +8,14 @@ Wow, you found this!
 **Word List:** 
 [word List](./wordList/)
 
-**Practice in Python**
+**Practice in Python:**
 [Python practice](./pythonPractice/)
 
-**Mockito Usage**
+**Mockito Usage:**
 [Mockito Usage](./mockito/)
 
-**Linux**
+**Linux:**
 [Linux](./linux/)
 
-**Cassandra**
+**Cassandra:**
 [Cassandra](./cassandra/)

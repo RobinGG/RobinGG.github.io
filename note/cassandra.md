@@ -1,4 +1,8 @@
-# Some Cassandra notes
+---
+layout: page
+title: Cassandra 入门笔记
+---
+
 
 ## 关于 Cassandra
 
