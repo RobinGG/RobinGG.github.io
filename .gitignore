@@ -2,3 +2,5 @@
 .idea
 *.iml
 _site
+Gemfile.lock
+.sass-cache/
