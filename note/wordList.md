@@ -3,6 +3,12 @@ layout: page
 title: Word List
 ---
 
+### Jul 24th 2017
+
+**utilize**
+make practical and effective use of
+利用，采用
+
 ### Jan 3rd 2017
 
 **absorb**
@@ -10,7 +16,7 @@ to take in or soak up like a sponge
 吸收
 
 **detrimental**
-causing hram or injury
+causing harm or injury
 有害的
 
 **gigantic**
