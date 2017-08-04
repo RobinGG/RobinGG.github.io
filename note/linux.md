@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Linux 碎碎念
+tags: [note]
 ---
 
 ## /etc/resolv.conf

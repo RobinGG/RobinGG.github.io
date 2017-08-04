@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mockito 用法
+tags: [note]
 ---
 
 ### 创建一个 mock 对象

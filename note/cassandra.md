@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Cassandra 入门笔记
+tags: [note]
 ---
 
 

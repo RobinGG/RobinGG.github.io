@@ -19,3 +19,6 @@ Wow, you found this!
 
 **Cassandra:**
 [Cassandra](./cassandra/)
+
+**Java**
+[Java practice](./java/)

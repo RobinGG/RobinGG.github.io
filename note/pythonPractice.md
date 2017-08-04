@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Practice in Python
+tags: [note]
 ---
 
 ### 在函数体内引用 module
