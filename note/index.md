@@ -22,3 +22,6 @@ Wow, you found this!
 
 **Java**
 [Java practice](./java/)
+
+**Test**
+[About Test](./test/)
