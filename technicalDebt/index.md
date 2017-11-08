@@ -3,6 +3,15 @@ layout: page
 title: Technical Debt
 ---
 
+### 10 Aug 2017
+
+What is Pact?
+What is BDD?
+
+### 7 Aug 2017
+
+泛型命名
+
 ### 22 May 2017
 
 Environment variables in Linux
