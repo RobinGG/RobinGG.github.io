@@ -15,6 +15,10 @@ Here are some of my friends' blogs：
 <br/>
 [Eric's Neverland](http://ericcenblog.com/)
 
+**Kasper Deng** - Senior Engineer in Ericsson
+<br/>
+[Kasper Wiki](https://kasperdeng.github.io/)
+
 ---
 
 ## Famous
