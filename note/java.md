@@ -54,3 +54,7 @@ Java内存模型只保证了基本读取和赋值是原子性操作。
 ### 有序性
 
 编译器的指令重排可能导致有序性问题
+
+## JDK
+
+- 64位的 JDK 相比32位会有一定的性能损失，主要来源于本地指针的额外开销。详细的解释：[64bit_performance](http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_performance)
