@@ -87,3 +87,21 @@ ssh 还有其他的用法。比如建立 tunnel:
 `# su [options] [-] [user]`
 
 `su` 我最常用来切换用户，一般来说是为了避免权限问题。不指定用户的话默认是切换到 root 用户。中间的短横线 '-' 是有意义的，等同于 `--login`。加上以后是一个 `login shell`。这中间的知识点又可以单独拎出来讲了，大家可以自己查一下。建议的话加上 `-`，比如 `su - fakeUser`
+
+### diff
+
+`# diff [OPTION]... FILES`
+
+`diff` 用来进行文件的比较，有三种模式：normanl, context(-c), unified(-u)。关于三种模式的不同，阮一峰的博客[《读懂diff》](http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html)讲得挺清楚的。
+
+### sed
+
+`# sed [OPTION]... {script-only-if-no-other-script} [input-file]...`
+
+`sed` 是神技之一了，可以用来在不打开文件的情况下操作文件内容，包括替换，删除，增加内容等。
+
+- 替换： sed "s/origin content/new content/g" /some/file
+- 插入： sed "1iFirst Line" /some/file
+- 删除： sed "1d" /some/file
+
+在真正使用的时候建议加上 `-i.bak`，保存一份先前的备份，这样出了问题也好回滚。**注意**：如果这个文件在一个配置目录下面，会导致两份配置都被加载
