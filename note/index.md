@@ -5,9 +5,6 @@ title: Index of Notes
 
 Wow, you found this!
 
-**Word List:** 
-[word List](./wordList/)
-
 **Practice in Python:**
 [Python practice](./pythonPractice/)
 
@@ -25,3 +22,6 @@ Wow, you found this!
 
 **Test**
 [About Test](./test/)
+
+**Book**
+[The Art of Java Concurrency Programming](./the-art-of-java-concurrency-programming.md)
