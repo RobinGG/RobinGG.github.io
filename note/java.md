@@ -24,7 +24,7 @@ public InputStream getInputStream(File file) throwsIOException {
 
 可以看到，我们需要在 finally 语句中手动的关闭输入流。如果忘记这一步操作，那输入流可能就永远不会被关闭了。
 
-我们再来看一下用 try-with-resource 的实现：
+我们再来看一下用 try-with-resource 的实现：
 
 ~~~java
 public InputStream tryWithResource(File file) throws IOException {
@@ -53,7 +53,7 @@ Java内存模型只保证了基本读取和赋值是原子性操作。
 
 ### 有序性
 
-编译器的指令重排可能导致有序性问题
+编译器的指令重排可能导致有序性问题。编译器和处理器都存在指令重拍，指令重拍的用意是提高性能。可以这么说，为了保证代码执行的有序性，我们是要做出性能的牺牲的。
 
 ## JDK
 
