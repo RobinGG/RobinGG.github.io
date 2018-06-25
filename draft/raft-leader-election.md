@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Raft 之领导选举
