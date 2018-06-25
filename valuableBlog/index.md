@@ -9,7 +9,7 @@ Here are some of my friends' blogs：
 
 **Frank Lao** - Coding Monkey.
 <br/>
-[WindSing](https://windsing.me/)
+~~[WindSing](https://windsing.me/)~~
 
 **Eric Cen** - Mentor in Ericsson.
 <br/>
