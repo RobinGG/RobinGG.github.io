@@ -55,6 +55,23 @@ Java内存模型只保证了基本读取和赋值是原子性操作。
 
 编译器的指令重排可能导致有序性问题。编译器和处理器都存在指令重拍，指令重拍的用意是提高性能。可以这么说，为了保证代码执行的有序性，我们是要做出性能的牺牲的。
 
+### 独占锁（排它锁）
+
+只允许一个线程加锁，即使是读-读的操作
+
+### 共享锁
+
+允许多个线程的读操作共享一个锁，但是写操作必须独占锁
+
+### AQS
+
+#### AQS 是什么？
+AQS 全称：AbstractQueuedSynchronizer。是一个基于 volatile 和 CAS 实现的同步器框架。
+
+#### AQS 干了什么？
+
+AQS 提供了至少两个功能：**获取同步状态**和**释放同步状态**。这两种功能其实就是刚好对应了 AQS 里面的两个方法：tryRequire 和 tryRelease
+
 ## JDK
 
 - 64位的 JDK 相比32位会有一定的性能损失，主要来源于本地指针的额外开销。详细的解释：[64bit_performance](http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_performance)
