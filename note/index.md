@@ -25,3 +25,6 @@ Wow, you found this!
 
 **Book**
 [The Art of Java Concurrency Programming](./the-art-of-java-concurrency-programming/)
+
+**Bloom filter**
+[Bloom filter](./bloomfilter/)
