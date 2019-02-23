@@ -4,7 +4,7 @@ title: Me - Robin
 ---
 
 ## Who am I?
-Hi there, I'm Robin, a Software Engineer working for Ericsson.
+Hi there, I'm Robin, a Software Engineer working for Ericsson before Jul 2018. Now, [Blue](https://www.mart.blue) is my employer.
 
 I perfer coding with Java, and also use Python and Shell sometimes. I graduated from SCUT(South China University of Techknowledge) in 2016. So, yeah, I'm still a junior Engineer.
 
