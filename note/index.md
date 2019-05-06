@@ -25,6 +25,10 @@ Wow, you found this!
 
 **Book**
 [The Art of Java Concurrency Programming](./the-art-of-java-concurrency-programming/)
+[从零开始学架构](./architect-from-zero/)
 
 **Bloom filter**
 [Bloom filter](./bloomfilter/)
+
+**RabbitMQ**
+[RabbitMQ](./rabbitmq/)
