@@ -1,6 +1,6 @@
 ---
-layout: Cucumber 分享
-title: 2018 and 2019
+layout: post
+title: Cucumber 分享
 ---
 
 ## 测试与开发 - 狗拿耗子，多管闲事
